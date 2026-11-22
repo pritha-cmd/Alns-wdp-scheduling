@@ -63,7 +63,19 @@ This research project investigates single-machine scheduling under sequence-depe
 - Python 3.10+ (tested on Python 3.12 64-bit)
 - Windows / Linux / macOS
 
-### Installation Steps
+### Quick Setup with Docker (recommended)
+Only Docker is required; no local Python setup.
+```bash
+git clone https://github.com/pritha-cmd/Alns-wdp-scheduling.git
+cd Alns-wdp-scheduling
+docker compose run --rm tests       # build the image and run the 26-test suite
+docker compose run --rm reproduce   # run run_all.py (core experiments)
+docker compose run --rm full        # run every step of Section 4
+docker compose run --rm shell       # interactive shell in the environment
+```
+Outputs (`results/`, `figures/`, `report/`, `slides/`) are written back to your working copy.
+
+### Manual Installation Steps
 ```bash
 # Clone the repository
 git clone <repo-url>
