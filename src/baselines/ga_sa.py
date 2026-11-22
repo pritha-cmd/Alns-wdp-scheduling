@@ -42,7 +42,7 @@ def ox_crossover(parent1: List[int], parent2: List[int], rng: random.Random) -> 
 def mutate_perm(perm: List[int], rng: random.Random) -> List[int]:
     """Applies swap, insert, or inversion mutation with equal probability."""
     n = len(perm)
-    if n <= 2:
+    if n < 2:
         return list(perm)
     m_type = rng.choice(["swap", "insert", "invert"])
     res = list(perm)

@@ -6,7 +6,8 @@ seaborn>=0.12.0
 pytest>=7.3.0
 ortools>=9.8.0
 pulp>=2.7.0
-highspy>=1.5.0
+# highspy 1.16.0 segfaults (PuLP/HiGHS ILP baseline) on Intel macOS + Python 3.14; 1.10-1.12 verified
+highspy>=1.5.0,<=1.12.0
 pymoo>=0.6.0
 python-pptx>=0.6.21
 reportlab>=4.0.0

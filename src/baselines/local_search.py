@@ -83,6 +83,8 @@ def multi_start_local_search(
 ) -> Tuple[List[int], int, float, int]:
     """
     Multi-start local search from randomized and heuristic starting permutations.
+    Restarts continue until `time_limit` is exhausted; `num_starts` is accepted for
+    backward compatibility but is not used.
     """
     start_time = time.perf_counter()
     rng = random.Random(seed)
