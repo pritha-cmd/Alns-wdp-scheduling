@@ -1,0 +1,111 @@
+instance,n,method,c_max,twt
+n8_a30_asym_s1803,8,NSGA-II,132.0,7.0
+n8_a30_asym_s1803,8,NSGA-II,124.0,24.0
+n8_a30_asym_s1803,8,ALNS-WDP (Scalarized),132.0,7.0
+n8_a30_asym_s1803,8,ALNS-WDP (Scalarized),134.0,9.0
+n8_a30_asym_s1803,8,ALNS-WDP (Scalarized),124.0,24.0
+n8_a30_asym_s1803,8,ALNS-WDP (Scalarized),124.0,24.0
+n8_a30_asym_s1803,8,ALNS-WDP (Scalarized),124.0,24.0
+n8_a30_asym_s1803,8,ALNS-WDP (Scalarized),124.0,24.0
+n8_a30_asym_s1803,8,ALNS-WDP (Scalarized),124.0,24.0
+n8_a30_asym_s1803,8,ALNS-WDP (Scalarized),124.0,24.0
+n8_a30_asym_s1803,8,ALNS-WDP (Scalarized),124.0,24.0
+n8_a30_asym_s1803,8,ALNS-WDP (Scalarized),124.0,24.0
+n8_a30_asym_s1803,8,ALNS-WDP (Scalarized),124.0,24.0
+n8_a0_sym_s1801,8,NSGA-II,114.0,45.0
+n8_a0_sym_s1801,8,NSGA-II,103.0,218.0
+n8_a0_sym_s1801,8,NSGA-II,111.0,144.0
+n8_a0_sym_s1801,8,NSGA-II,114.0,45.0
+n8_a0_sym_s1801,8,NSGA-II,101.0,256.0
+n8_a0_sym_s1801,8,NSGA-II,113.0,137.0
+n8_a0_sym_s1801,8,ALNS-WDP (Scalarized),103.0,218.0
+n8_a0_sym_s1801,8,ALNS-WDP (Scalarized),103.0,218.0
+n8_a0_sym_s1801,8,ALNS-WDP (Scalarized),103.0,218.0
+n8_a0_sym_s1801,8,ALNS-WDP (Scalarized),103.0,218.0
+n8_a0_sym_s1801,8,ALNS-WDP (Scalarized),103.0,218.0
+n8_a0_sym_s1801,8,ALNS-WDP (Scalarized),103.0,218.0
+n8_a0_sym_s1801,8,ALNS-WDP (Scalarized),103.0,218.0
+n8_a0_sym_s1801,8,ALNS-WDP (Scalarized),103.0,218.0
+n8_a0_sym_s1801,8,ALNS-WDP (Scalarized),101.0,256.0
+n8_a0_sym_s1801,8,ALNS-WDP (Scalarized),101.0,256.0
+n8_a0_sym_s1801,8,ALNS-WDP (Scalarized),101.0,256.0
+n20_a30_sym_s3004,20,NSGA-II,290.0,0.0
+n20_a30_sym_s3004,20,NSGA-II,290.0,0.0
+n20_a30_sym_s3004,20,NSGA-II,290.0,0.0
+n20_a30_sym_s3004,20,NSGA-II,290.0,0.0
+n20_a30_sym_s3004,20,NSGA-II,280.0,1178.0
+n20_a30_sym_s3004,20,NSGA-II,283.0,878.0
+n20_a30_sym_s3004,20,NSGA-II,289.0,480.0
+n20_a30_sym_s3004,20,ALNS-WDP (Scalarized),291.0,684.0
+n20_a30_sym_s3004,20,ALNS-WDP (Scalarized),300.0,1048.0
+n20_a30_sym_s3004,20,ALNS-WDP (Scalarized),278.0,1649.0
+n20_a30_sym_s3004,20,ALNS-WDP (Scalarized),291.0,606.0
+n20_a30_sym_s3004,20,ALNS-WDP (Scalarized),279.0,1174.0
+n20_a30_sym_s3004,20,ALNS-WDP (Scalarized),290.0,1178.0
+n20_a30_sym_s3004,20,ALNS-WDP (Scalarized),285.0,853.0
+n20_a30_sym_s3004,20,ALNS-WDP (Scalarized),275.0,1724.0
+n20_a30_sym_s3004,20,ALNS-WDP (Scalarized),275.0,1724.0
+n20_a30_sym_s3004,20,ALNS-WDP (Scalarized),275.0,1764.0
+n20_a30_sym_s3004,20,ALNS-WDP (Scalarized),275.0,1764.0
+n20_a0_asym_s3000,20,NSGA-II,239.0,299.0
+n20_a0_asym_s3000,20,NSGA-II,230.0,446.0
+n20_a0_asym_s3000,20,NSGA-II,232.0,404.0
+n20_a0_asym_s3000,20,NSGA-II,241.0,241.0
+n20_a0_asym_s3000,20,NSGA-II,250.0,83.0
+n20_a0_asym_s3000,20,NSGA-II,244.0,135.0
+n20_a0_asym_s3000,20,NSGA-II,242.0,175.0
+n20_a0_asym_s3000,20,NSGA-II,238.0,314.0
+n20_a0_asym_s3000,20,ALNS-WDP (Scalarized),232.0,834.0
+n20_a0_asym_s3000,20,ALNS-WDP (Scalarized),222.0,1343.0
+n20_a0_asym_s3000,20,ALNS-WDP (Scalarized),238.0,852.0
+n20_a0_asym_s3000,20,ALNS-WDP (Scalarized),236.0,1076.0
+n20_a0_asym_s3000,20,ALNS-WDP (Scalarized),227.0,848.0
+n20_a0_asym_s3000,20,ALNS-WDP (Scalarized),229.0,938.0
+n20_a0_asym_s3000,20,ALNS-WDP (Scalarized),227.0,1340.0
+n20_a0_asym_s3000,20,ALNS-WDP (Scalarized),229.0,751.0
+n20_a0_asym_s3000,20,ALNS-WDP (Scalarized),232.0,448.0
+n20_a0_asym_s3000,20,ALNS-WDP (Scalarized),228.0,831.0
+n20_a0_asym_s3000,20,ALNS-WDP (Scalarized),227.0,2978.0
+n50_a0_sym_s6001,50,NSGA-II,745.0,5878.0
+n50_a0_sym_s6001,50,NSGA-II,751.0,5677.0
+n50_a0_sym_s6001,50,NSGA-II,733.0,6620.0
+n50_a0_sym_s6001,50,NSGA-II,746.0,5755.0
+n50_a0_sym_s6001,50,NSGA-II,743.0,5944.0
+n50_a0_sym_s6001,50,NSGA-II,748.0,5715.0
+n50_a0_sym_s6001,50,NSGA-II,737.0,6225.0
+n50_a0_sym_s6001,50,NSGA-II,728.0,7371.0
+n50_a0_sym_s6001,50,NSGA-II,742.0,6079.0
+n50_a0_sym_s6001,50,NSGA-II,730.0,6644.0
+n50_a0_sym_s6001,50,NSGA-II,752.0,5567.0
+n50_a0_sym_s6001,50,NSGA-II,736.0,6452.0
+n50_a0_sym_s6001,50,NSGA-II,739.0,6133.0
+n50_a0_sym_s6001,50,ALNS-WDP (Scalarized),684.0,11521.0
+n50_a0_sym_s6001,50,ALNS-WDP (Scalarized),677.0,12723.0
+n50_a0_sym_s6001,50,ALNS-WDP (Scalarized),686.0,11226.0
+n50_a0_sym_s6001,50,ALNS-WDP (Scalarized),687.0,13088.0
+n50_a0_sym_s6001,50,ALNS-WDP (Scalarized),685.0,11708.0
+n50_a0_sym_s6001,50,ALNS-WDP (Scalarized),672.0,13166.0
+n50_a0_sym_s6001,50,ALNS-WDP (Scalarized),672.0,13166.0
+n50_a0_sym_s6001,50,ALNS-WDP (Scalarized),687.0,13088.0
+n50_a0_sym_s6001,50,ALNS-WDP (Scalarized),687.0,13088.0
+n50_a0_sym_s6001,50,ALNS-WDP (Scalarized),679.0,13898.0
+n50_a0_sym_s6001,50,ALNS-WDP (Scalarized),685.0,12730.0
+n50_a60_asym_s6006,50,NSGA-II,669.0,32.0
+n50_a60_asym_s6006,50,NSGA-II,664.0,156.0
+n50_a60_asym_s6006,50,NSGA-II,664.0,156.0
+n50_a60_asym_s6006,50,NSGA-II,664.0,156.0
+n50_a60_asym_s6006,50,NSGA-II,669.0,32.0
+n50_a60_asym_s6006,50,NSGA-II,669.0,32.0
+n50_a60_asym_s6006,50,NSGA-II,669.0,32.0
+n50_a60_asym_s6006,50,NSGA-II,669.0,32.0
+n50_a60_asym_s6006,50,ALNS-WDP (Scalarized),633.0,2334.0
+n50_a60_asym_s6006,50,ALNS-WDP (Scalarized),618.0,2057.0
+n50_a60_asym_s6006,50,ALNS-WDP (Scalarized),630.0,1415.0
+n50_a60_asym_s6006,50,ALNS-WDP (Scalarized),584.0,757.0
+n50_a60_asym_s6006,50,ALNS-WDP (Scalarized),611.0,3744.0
+n50_a60_asym_s6006,50,ALNS-WDP (Scalarized),600.0,2468.0
+n50_a60_asym_s6006,50,ALNS-WDP (Scalarized),610.0,3529.0
+n50_a60_asym_s6006,50,ALNS-WDP (Scalarized),614.0,3026.0
+n50_a60_asym_s6006,50,ALNS-WDP (Scalarized),620.0,2018.0
+n50_a60_asym_s6006,50,ALNS-WDP (Scalarized),617.0,7488.0
+n50_a60_asym_s6006,50,ALNS-WDP (Scalarized),605.0,5015.0

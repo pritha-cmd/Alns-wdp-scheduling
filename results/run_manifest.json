@@ -1,0 +1,140 @@
+{
+  "timestamp": "2026-11-13T07:16:51Z",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python_version": "3.12.5",
+  "cpu_count_logical": 18,
+  "cpu_count_physical": 14,
+  "total_ram_gb": 15.61,
+  "packages": {
+    "ortools": "9.15.6755",
+    "pulp": "4.2.0",
+    "pymoo": "0.6.2",
+    "numpy": "2.0.2",
+    "scipy": "1.15.3",
+    "pandas": "2.2.3"
+  },
+  "random_seeds_stochastic": [
+    42,
+    59,
+    76,
+    93,
+    110,
+    127,
+    144,
+    161,
+    178,
+    195,
+    212,
+    229,
+    246,
+    263,
+    280,
+    297,
+    314,
+    331,
+    348,
+    365,
+    382,
+    399,
+    416,
+    433,
+    450,
+    467,
+    484,
+    501,
+    518,
+    535
+  ],
+  "configuration": {
+    "num_benchmark_instances": 20,
+    "stochastic_seeds": 30,
+    "ablation_variants": 5,
+    "biobjective_seeds": 15,
+    "total_benchmark_records": 2535
+  },
+  "per_experiment_budget_plan": {
+    "single_objective_benchmarks": {
+      "instance_count": 20,
+      "instances": [
+        "base_4job",
+        "n8_a30_asym_s1803",
+        "n8_a0_sym_s1801",
+        "n10_a0_asym_s2000",
+        "n10_a60_sym_s2007",
+        "n12_a30_asym_s2203",
+        "n12_a30_sym_s2204",
+        "n15_a60_asym_s2506",
+        "n15_a0_sym_s2501",
+        "n20_a0_asym_s3000",
+        "n20_a30_sym_s3004",
+        "n30_a30_asym_s4003",
+        "n30_a60_sym_s4007",
+        "n50_a60_asym_s6006",
+        "n50_a0_sym_s6001",
+        "n100_a0_asym_s11000",
+        "n100_a30_sym_s11004",
+        "n200_a30_asym_s21003",
+        "derived_bayg29_n29_a30",
+        "derived_berlin52_n52_a30"
+      ],
+      "stochastic_methods": [
+        "ALNS_WDP",
+        "SA",
+        "GA",
+        "MultiStart_LS"
+      ],
+      "seeds_per_method": 30,
+      "budget_formula": "max(0.75, 0.03 * n) seconds",
+      "parallelism": "sequential & 8-worker process pool for MultiStart_LS",
+      "actual_records": 2535,
+      "wall_clock_time": "~45 minutes"
+    },
+    "ablation_study": {
+      "instance_count": 8,
+      "variants": [
+        "ALNS_WDP_Full",
+        "ALNS_No_WindowDP",
+        "ALNS_No_AdaptWeights",
+        "Plain_ALNS",
+        "WindowDP_FinalPolishOnly"
+      ],
+      "seeds_per_variant": 15,
+      "budget_formula": "max(1.2, 0.03 * n) seconds",
+      "actual_records": 600,
+      "wall_clock_time": "~18 minutes"
+    },
+    "window_dp_design_study": {
+      "instance_count": 3,
+      "k_grid": [
+        4,
+        6,
+        8,
+        10,
+        12
+      ],
+      "placement_strategies": [
+        "sliding",
+        "worst_setup",
+        "random"
+      ],
+      "seeds": 5,
+      "actual_records": 80,
+      "wall_clock_time": "~1.5 minutes"
+    },
+    "biobjective_study": {
+      "instance_count": 6,
+      "methods": [
+        "NSGA-II",
+        "ALNS-WDP (Scalarized)"
+      ],
+      "seeds": 15,
+      "scalar_lambdas": 11,
+      "metrics": [
+        "hypervolume",
+        "igd"
+      ],
+      "actual_records": 180,
+      "wall_clock_time": "~2.5 minutes"
+    }
+  }
+}

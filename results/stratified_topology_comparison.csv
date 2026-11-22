@@ -1,0 +1,9 @@
+setup_type,n_instances,method,gap_lb_pct_mean,gap_lb_pct_std,makespan_mean,makespan_std,alns_wins,alns_ties,alns_losses,alns_mean_imprv_pct,alns_std_imprv_pct
+asymmetric,9,ALNS_WDP,4.38,3.07,612.62,754.03,,,,,
+asymmetric,9,SA,7.38,4.97,653.84,832.12,6.0,2.0,1.0,2.69,3.27
+asymmetric,9,GA,9.15,4.29,652.47,818.97,9.0,0.0,0.0,4.34,2.02
+asymmetric,9,MultiStart_LS,19.24,21.06,830.72,1161.27,6.0,2.0,1.0,10.12,14.31
+symmetric,11,ALNS_WDP,6.37,4.16,415.45,371.35,,,,,
+symmetric,11,SA,6.06,3.87,415.26,373.57,3.0,4.0,4.0,-0.29,0.73
+symmetric,11,GA,6.52,4.33,415.62,369.88,6.0,3.0,2.0,0.13,0.59
+symmetric,11,MultiStart_LS,11.32,10.95,467.32,474.88,3.0,4.0,4.0,3.75,8.09
