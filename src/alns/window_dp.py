@@ -25,9 +25,12 @@ def optimize_window_dp(
     r: List[int],
     s: List[List[int]],
     s0: List[int],
+    deadline: Optional[float] = None,
 ) -> Tuple[List[int], bool]:
     """
     Re-optimizes the subsegment perm[start_idx : start_idx + k] to exact mathematical optimality.
+    If a wall-clock `deadline` is given and passes mid-DP, the permutation is returned
+    unchanged (so monotonicity is preserved and large k cannot overrun the budget).
     
     Parameters:
     - perm: full permutation
@@ -75,6 +78,8 @@ def optimize_window_dp(
         
     # Transitions
     for mask in range(1, num_states):
+        if deadline is not None and (mask & 63) == 0 and time.perf_counter() >= deadline:
+            return list(perm), False
         for last_idx, last_job in enumerate(window_jobs):
             curr_c = dp[mask, last_idx]
             if curr_c >= INF:
@@ -163,7 +168,7 @@ def sliding_window_dp_sweep(
     for start_idx in start_indices:
         if deadline is not None and time.perf_counter() >= deadline:
             break
-        current_perm, imp = optimize_window_dp(current_perm, start_idx, k, p, r, s, s0)
+        current_perm, imp = optimize_window_dp(current_perm, start_idx, k, p, r, s, s0, deadline=deadline)
         if imp:
             any_improvement = True
             
@@ -191,7 +196,8 @@ def targeted_window_dp_polish(
     """
     n = len(perm)
     if n <= k:
-        return optimize_window_dp(perm, 0, n, p, r, s, s0)[0], compute_makespan(perm, p, r, s, s0), False
+        new_perm, imp = optimize_window_dp(perm, 0, n, p, r, s, s0, deadline=deadline)
+        return new_perm, compute_makespan(new_perm, p, r, s, s0), imp
         
     if deadline is not None and time.perf_counter() >= deadline:
         return list(perm), compute_makespan(perm, p, r, s, s0), False
@@ -211,12 +217,12 @@ def targeted_window_dp_polish(
                 worst_pos = idx
                 
         start_idx = max(0, min(worst_pos - k // 2, n - k))
-        new_perm, imp = optimize_window_dp(perm, start_idx, k, p, r, s, s0)
+        new_perm, imp = optimize_window_dp(perm, start_idx, k, p, r, s, s0, deadline=deadline)
         return new_perm, compute_makespan(new_perm, p, r, s, s0), imp
     elif strategy == "random":
         r_gen = rng if rng is not None else random.Random()
         start_idx = r_gen.randint(0, n - k)
-        new_perm, imp = optimize_window_dp(perm, start_idx, k, p, r, s, s0)
+        new_perm, imp = optimize_window_dp(perm, start_idx, k, p, r, s, s0, deadline=deadline)
         return new_perm, compute_makespan(new_perm, p, r, s, s0), imp
     else:
         return sliding_window_dp_sweep(perm, k, p, r, s, s0, deadline=deadline)

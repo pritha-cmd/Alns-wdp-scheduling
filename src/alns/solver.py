@@ -200,6 +200,8 @@ def solve_alns_wdp(
     
     # Main search loop strictly budgeted by wall-clock time
     while time.perf_counter() < search_deadline:
+        if config.max_iterations is not None and iteration >= config.max_iterations:
+            break
         iteration += 1
         elapsed = time.perf_counter() - start_time
         time_frac = min(1.0, elapsed / config.time_limit)
@@ -246,7 +248,8 @@ def solve_alns_wdp(
         # 2. Destroy
         q_min = max(2, int(config.q_min_ratio * n))
         q_max = max(q_min + 1, int(config.q_max_ratio * n))
-        q = rng.randint(q_min, min(q_max, n - 1))
+        q_hi = max(0, min(q_max, n - 1))
+        q = rng.randint(min(q_min, q_hi), q_hi)
         
         partial, removed = d_func(
             perm=curr_perm,
