@@ -1,0 +1,39 @@
+# Usage (from the repo root):
+#   docker compose run --rm tests        # run the 26-test pytest suite
+#   docker compose run --rm reproduce    # run the full run_all.py pipeline
+#   docker compose run --rm full         # run every step from README section 4
+#   docker compose run --rm shell        # interactive shell inside the environment
+#
+# The project folder is bind-mounted at /app, so results/, figures/, report/
+# and slides/ outputs are written straight back to your working copy.
+
+x-app: &app
+  build: .
+  image: alns-wdp-scheduling
+  volumes:
+    - .:/app
+
+services:
+  tests:
+    <<: *app
+    command: python -m pytest tests/ -v
+
+  reproduce:
+    <<: *app
+    command: python run_all.py
+
+  full:
+    <<: *app
+    command: >
+      sh -c "python run_all.py &&
+             python tools/recalculate_lb_results.py &&
+             python tools/run_rho_sensitivity.py &&
+             python report/generate_pdf.py &&
+             python slides/generate_presentation.py &&
+             python tools/check_claims.py"
+
+  shell:
+    <<: *app
+    command: bash
+    stdin_open: true
+    tty: true
